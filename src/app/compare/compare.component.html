@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-12" align="center">
+        <h3>Pewdiepie Vs T-Series Live Sub Count</h3>
+      </div>
+    </div>
+    <div class="row" *ngIf="response">
+      <div class="col col-xs-6" style="border-right-width: 0.3px; border-right-color: rgb(219, 215, 215); border-right-style: solid;">
+        <div class="card shadow" style="width: 95%;">
+          <img class="card-img-top" src={{firstBannerImageUrl}} width="100%" height="20%">
+          <div class="card-body" align="center">
+            <img class="profile-img rounded-circle" src={{firstImageUrl}}>
+            <h2 class="card-title">{{firstTitle}}</h2>
+            <h4 class="card-text"><ng2-odometer number={{firstSubCount}}></ng2-odometer></h4>
+            <p class="card-text">Subscribers</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-xs-6" align="right">
+        <div class="card shadow" style="width: 95%;">
+          <img class="card-img-top" src={{secondBannerImageUrl}} width="100%" height="20%">
+          <div class="card-body" align="center">
+            <img class="profile-img rounded-circle" src={{secondImageUrl}}>
+            <h2 class="card-title">{{secondTitle}}</h2>
+            <h4 class="card-text"><ng2-odometer number={{secondSubCount}}></ng2-odometer></h4>
+            <p class="card-text">Subscribers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="subGap">
+      <div class="col col-xs-12" align="center">
+        <div class="card shadow" style="width: 20%">
+          <h2 class="card-title" *ngIf="firstSubCount>secondSubCount">{{firstTitle}}</h2>
+          <h2 class="card-title" *ngIf="secondSubCount>firstSubCount">{{secondTitle}}</h2>
+            <h4 class="card-text"> is <ng2-odometer number={{subGap}}></ng2-odometer></h4>
+            <p class="card-text">Subscribers Ahead!</p>
+        </div>
+      </div>
+    </div>
+    </div>

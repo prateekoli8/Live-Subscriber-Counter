@@ -1,6 +1,9 @@
 .row{
   padding-top: 20px;
 }
+.card{
+  background-color: rgba(235, 235, 235, 0.849);
+}
 .navbar-default {
   background-color: #eb5d4d;
   border-color: #f05948;
