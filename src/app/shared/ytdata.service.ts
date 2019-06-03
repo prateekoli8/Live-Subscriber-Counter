@@ -6,7 +6,7 @@ import { switchMap } from 'rxjs/operators';
 @Injectable()
 export class YTService {
   constructor(private httpClient: HttpClient) {}
-  api_key = 'AIzaSyBDh48Lhz1aeNxANEQr5gUTC1hriCHf5Oc';
+  api_key = 'YOUR_KEY_HERE';
   api_base_url = 'https://www.googleapis.com/youtube/v3/';
   getUserData(username) {
     const apiUrl = this.api_base_url +
