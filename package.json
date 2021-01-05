@@ -20,7 +20,7 @@
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
     "@types/gapi": "0.0.36",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.2.1",
     "core-js": "^2.5.4",
     "googleapis": "^36.0.0",
